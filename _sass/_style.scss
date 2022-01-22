@@ -16,11 +16,15 @@ body {
   overflow-x: hidden;
   color: $color-text;
   font-size: 1rem;
-  max-width: 63em;
+  max-width: 50rem;
 
   @media (min-width: 820px) {
     font-size: 1.2rem;
   }
+}
+
+.faded {
+  color: #595959;
 }
 
 time {
@@ -90,7 +94,7 @@ a {
     top: -0.5em;
     font-size: 0.7em;
     content: "↗";
-    color: #aaaaaa;
+    color: #807e7e;
   }
   &.internal-link:after,
   &.footnote:after,
@@ -106,6 +110,24 @@ a {
 
 nav {
   margin: 1em 0 3em;
+}
+
+.post-title, .notes-title {
+  margin-bottom: 0.2em;
+}
+
+.post-heading, .notes-heading {
+  margin: 3em 0 2em;
+}
+
+.post > p:last-of-type,
+.notes > p:last-of-type {
+  padding-bottom: 1em;
+  border-bottom: 5px solid #f0f0f0;
+}
+
+.list-entry {
+  margin: 1em 0 1.25em;
 }
 
 #notes-entry-container {

@@ -8,12 +8,32 @@ permalink: /
 # Welcome! 🌱
 
 <p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
-  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
+  To get started you can check <span style="font-weight: bold"><a class="internal-link" href="/notes">Notes</a></span> to find anything you want to read about.
 </p>
 
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
+This digital garden is my way to share notes and thoughts. 
 
-The easiest way to get started is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll). If you need any help, my [DMs are open on Twitter (@vaillancourtmax)](https://twitter.com/vaillancourtmax). 👋
+Notes are mainly extracted from the books and articles I read while posts are my own. Usually based on the notes you will find here.
+
+<div class="grid-element">
+  <h2>Last notes</h2>
+  {% assign notes_limit = 5 %}
+  {% for notes in site.notes limit: notes_limit %}
+  <div class="list-entry">
+    <div>
+      <a class="internal-link" href="{{ notes.url }}">
+        {{ notes.title }}
+      </a> 
+      <span class="faded">({{ notes.date | date: "%Y-%m-%d" }})</span>
+    </div>
+    <div>{{ notes.excerpt | strip_html | truncatewords: 30 }}</div>
+  </div>
+  {% endfor %}
+  <p>
+    <a class="internal-link" href="/notes">I wrote {{ site.notes.size | minus: notes_limit }} more notes</a>.
+  </p>
+</div>
+
 
 <style>
   .wrapper {
