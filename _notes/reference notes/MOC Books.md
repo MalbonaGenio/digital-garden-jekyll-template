@@ -2,6 +2,7 @@
 title: MOC Books
 tags: 
 ---
+A map of content of some of the books that form the notes in my garden.
 
 [[Getting to plan B]]  
 [[How to take smart notes]]  

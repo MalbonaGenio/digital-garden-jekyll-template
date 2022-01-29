@@ -13,7 +13,7 @@ permalink: /
 
 This digital garden is my way to share notes and thoughts. 
 
-Notes are mainly extracted from the books and articles I read while posts are my own. Usually based on the notes you will find here.
+[[Notes]] are mainly extracted from the books and articles I read while [[posts]] are my own. Usually based on the notes you will find here.
 
 <div class="grid-element">
   <h2>Last notes</h2>
